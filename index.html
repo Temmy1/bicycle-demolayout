@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav">
+    <nav class="nav header__nav">
       <ul class="header__menu">
         <li class="header__list">
           <a href="" class="header__link">About us</a>
@@ -34,20 +34,24 @@
   </header>
   
   <section class="about-block">
-    <img src="images/chain.png" alt="dec" class="decoration">
-    <h1 class="heading">A new generation of vintage bike</h1>
-    <p class="about-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <div class="about-block__wrapper">
+      <img src="images/chain.png" alt="dec" class="decoration">
+      <h1 class="heading">A new generation of vintage bike</h1>
+      <p class="about-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
   </section>
 
   <section class="products">
-    <div class="product-item products__product-item">
-      <div class="product-item__image-wrap">
+    <div class="product-item products__product-item-first">
+      <div class="product-item__image-wrap product-item__image-wrap_with-logo">
         <img src="images/gallery1.jpg" alt="" class="product-item__img">
-        <img src="images/bLogo.png" alt="" class="product-item__logo">
+        <div class="product-item__logo-wrapper">
+          <img src="images/bLogo.png" alt="" class="product-item__logo">
+        </div>
       </div>
       <div class="product-item__description">
         <img src="images/frame.png" alt="" class="decoration">
-        <h3 class="product-item__heading">
+        <h3 class="heading">
           Vintage Oliva
         </h3>
         <p class="product-item__text">
@@ -58,10 +62,10 @@
         <img src="images/gallery2.jpg" alt="" class="product-item__img">
       </div>
     </div>
-    <div class="product-item products__product-item">
+    <div class="product-item products__product-item-second">
       <div class="product-item__description">
         <img src="images/mech.png" alt="" class="decoration">
-        <h3 class="product-item__heading">
+        <h3 class="heading">
           La Boriosa
         </h3>
         <p class="product-item__text">
@@ -71,19 +75,23 @@
       <div class="product-item__image-wrap">
         <img src="images/gallery3.jpg" alt="" class="product-item__img">
       </div>
-      <div class="product-item__image-wrap">
+      <div class="product-item__image-wrap product-item__image-wrap_with-logo">
         <img src="images/gallery4.jpg" alt="" class="product-item__img">
-        <img src="images/mLogo.png" alt="" class="product-item__logo">
+        <div class="product-item__logo-wrapper">
+          <img src="images/mLogo.png" alt="" class="product-item__logo">
+        </div>
       </div>
     </div>
-    <div class="product-item products__product-item">
-        <div class="product-item__image-wrap">
+    <div class="product-item products__product-item-third">
+      <div class="product-item__image-wrap product-item__image-wrap_with-logo">
         <img src="images/gallery5.jpg" alt="" class="product-item__img">
-        <img src="images/nLogo.png" alt="" class="product-item__logo">
+        <div class="product-item__logo-wrapper">
+          <img src="images/nLogo.png" alt="" class="product-item__logo">
         </div>
+      </div>
       <div class="product-item__description">
         <img src="images/fork.png" alt="" class="decoration">
-        <h3 class="product-item__heading">
+        <h3 class="heading">
           Retrò Bike - M. Hulot
         </h3>
         <p class="product-item__text">
@@ -100,11 +108,18 @@
   </section>
 
   <section class="carousel-wrapper">
-    <p>Пока пусть побудет пустым этот слайдер</p>
+    <div class="slide carousel-wrapper__slide">
+      <div class="slide__icon">
+        <img src="images/tweet.png" alt="" class="slide__img">
+      </div>
+      <p class="slide__social-name">AOD New York @aod <span class="slide__social-name_muted">/ 35 min</span></p>
+      <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+    </div>
   </section>
 
   <section class="shop-gallery">
-    <div class="shop-gallery__shop-item">
+    <div class="shop-gallery__item-wrapper">
+      <div class="shop-gallery__shop-item">
       <img src="images/shop1.jpg" alt="" class="shop-gallery__img">
       <div class="img-wrap shop-gallery__img-wrap">
         <img src="images/shop-logo.png" alt="" class="img-wrap__image">
@@ -152,15 +167,20 @@
         <img src="images/shop-logo.png" alt="" class="img-wrap__image">
       </div>
     </div>
-    <a href="#" class="shop-gallery__button">Discover the shop</a>
+    </div>
+    <div class="shop-gallery__btn-wrapper">
+      <a href="#" class="shop-gallery__button">Discover the shop</a>
+    </div>
   </section>
 
   <section class="contact">
-    <a href="#" class="link"><img src="images/logo.png" alt="" class="logo"></a>
-    <p class="contact__text">Stay on the saddle!</p>
-    <div class="contact__form">
-      <input type="email" name="Email" id="" class="contact__input" placeholder="Enter yor email">
-      <a href="#" class="contact__button">GO</a>
+    <div class="contact__wrapper">
+      <a href="#" class="link"><img src="images/logo.png" alt="" class="logo"></a>
+      <p class="contact__text">Stay on the saddle!</p>
+      <div class="contact__form">
+        <input type="email" name="Email" id="" class="contact__input" placeholder="Enter yor email">
+        <a href="#" class="contact__button">GO</a>
+      </div>
     </div>
   </section>
 
